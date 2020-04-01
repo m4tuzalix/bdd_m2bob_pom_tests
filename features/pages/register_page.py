@@ -48,7 +48,7 @@ class RegisterPage(basePage):
                 return errors
             """)
             if len(possible_errors) > 0:
-                raise Exception
+                raise ValueError
         except:
             return False
         return True

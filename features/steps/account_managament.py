@@ -63,6 +63,5 @@ def validate_login(context, message):
 @when("If my account has not been activated yet, I should see the message '{message}'")
 def check_if_account_activated(context, message):
     context.account_not_activated = context.model.account_activated()
-    print(message)
     assert message in str(context.account_not_activated)
 

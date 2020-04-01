@@ -33,7 +33,7 @@ def check_registration_form(context):
     assert "Registration" in str(context.form_name)
 
 @then("Fulfill the registration form with my credentials {email} {email2} {password} {password2}")
-def check_the_checkboxes(context, email, email2, password, password2):
+def fulfill_the_form(context, email, email2, password, password2):
     context.credentials = [email, email2, password, password2]
     context.fields_fulfillment = context.model.fulfill_the_fields(context.credentials)
     assert context.fields_fulfillment == True

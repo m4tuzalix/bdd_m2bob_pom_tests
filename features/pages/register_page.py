@@ -47,7 +47,7 @@ class RegisterPage(basePage):
                 const errors = document.querySelectorAll("small.innerError")
                 return errors
             """)
-            if len(possible_errors) > 1:
+            if len(possible_errors) > 0:
                 raise Exception
         except:
             return False

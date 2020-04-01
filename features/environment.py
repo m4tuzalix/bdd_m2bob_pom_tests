@@ -1,5 +1,5 @@
 from selenium import webdriver
-import os, sys
+import sys
 from os.path import dirname, join, abspath
 sys.path.insert(0, abspath(join(dirname(__file__), '..')))
 from features.pages.register_page import RegisterPage

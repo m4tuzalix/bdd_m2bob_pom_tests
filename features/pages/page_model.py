@@ -2,7 +2,7 @@ from selenium import webdriver
 
 class basePage(object):
     def __init__(self):
-        self.browser = webdriver.Chrome("D:/netguru/features/chromedriver.exe")
+        self.browser = webdriver.Chrome("chromedriver.exe")
         self.timeout = 10
 
     def open_page(self, url):

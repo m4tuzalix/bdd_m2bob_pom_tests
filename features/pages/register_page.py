@@ -1,5 +1,5 @@
 from .page_model import basePage
-from time import sleep
+
 class RegisterPage(basePage):
     def __int__(self):
         basePage.__init__(self)

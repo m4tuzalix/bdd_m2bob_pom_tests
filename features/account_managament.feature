@@ -4,7 +4,7 @@ Feature: Account managament
   # tags to distinguish the scenarios
 
   @register
-  Scenario Outline: User register the new account
+  Scenario Outline: As a new user, I would like to register my account
     Given I'm opening the page 'https://m2bob-forum.net/'
     Then I'm checking the 'register' checkbox
     And Providing my login <login>
@@ -20,7 +20,7 @@ Feature: Account managament
      |xyz345   |xyz@gmail.com   |xyz@gmail.com   |Qazzaq12312| Qazzaq12312 |
      
   @login
-  Scenario Outline: User login to his account
+  Scenario Outline: As a user I would like to log in my account with my e-mail and password
     Given I'm opening the page 'https://m2bob-forum.net/'
     Then I'm checking the 'login' checkbox
     And Providing my login <email>

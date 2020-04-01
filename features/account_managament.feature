@@ -18,6 +18,7 @@ Feature: Account managament
     Examples: Register
      |login    |email           |email2          |password   | password2   |
      |xyz345   |xyz@gmail.com   |xyz@gmail.com   |Qazzaq12312| Qazzaq12312 |
+     
   @login
   Scenario Outline: User login to his account
     Given I'm opening the page 'https://m2bob-forum.net/'

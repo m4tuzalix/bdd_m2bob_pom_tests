@@ -22,7 +22,7 @@ def click_button(context):
     context.button = context.model.click_submit()
     assert context.button ++ True
 
-@When("The page has reloaded, I should see the rules and accept it by clicking the button")
+@when("The page has reloaded, I should see the rules and accept it by clicking the button")
 def accept_the_rules(context):
     context.rules = context.model.accept_the_rules()
     assert context.rules == True

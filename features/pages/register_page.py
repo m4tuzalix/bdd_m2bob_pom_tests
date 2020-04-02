@@ -19,7 +19,7 @@ class RegisterPage(basePage):
         except:
             return False
 
-    def fulfill_the_fields(self, credentials): #/ inputs are doubled so implemented js to retriev the correct ones
+    def fulfill_the_fields(self, credentials): #/ inputs are doubled so implemented js to retrieve the correct ones
         try:
             self.fields = self.browser.execute_script("""
                 const fields = document.querySelectorAll("div[class='container containerPadding marginTop'] input")

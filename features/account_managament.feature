@@ -1,6 +1,6 @@
 # Created by Mateusz at 31.03.2020
 
-Feature: Account managament
+Feature: Account management
   # tags to distinguish the scenarios
 
   @register
